@@ -7,7 +7,7 @@ A light weight, easy to use select Svelte component with lots of handy integrate
 
 ## Authors
 
-- [@Daniel Ho](https://github.com/Hai567)
+[@Daniel Ho](https://github.com/Hai567)
 
 
 ## Demo
