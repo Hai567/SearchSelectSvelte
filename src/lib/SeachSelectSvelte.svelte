@@ -1,5 +1,4 @@
 <script>
-    import "../app.css"
     export let selected, inputPlaceholder, boardCssClass
     import { onMount } from "svelte";
     let isDropdownOpen = false
