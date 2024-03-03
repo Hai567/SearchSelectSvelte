@@ -1,1 +1,1 @@
-export { default as SeachSelectSvelte } from "./SeachSelectSvelte.svelte"
+export { default as SearchSelectSvelte } from "./SearchSelectSvelte.svelte"
