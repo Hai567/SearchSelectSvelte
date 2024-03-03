@@ -1,6 +1,6 @@
 <script>
     import "../app.css"
-    export let selected, inputPlaceholder, boardCssClass
+    export let selected, inputPlaceholder, dropdownCssClass, dropdownStyle
     import { onMount } from "svelte";
     let isDropdownOpen = false
 
@@ -106,7 +106,7 @@
     <input type="text" tabindex="0" class="w-full input-bordered" placeholder={inputPlaceholder || "Search here"} bind:value={query} on:keyup={filterQuery} on:click={toggleDropdown}>
     <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
     <div class="w-full relative">
-        <ul id="" tabindex="0" class:hidden={!isDropdownOpen} class="block absolute p-2 rounded-lg max-h-[15em] w-full z-[1] bg-white {boardCssClass}" bind:this={mediaList}>
+        <ul id="" tabindex="0" style={dropdownStyle ||''} class:hidden={!isDropdownOpen} class="block absolute p-2 rounded-lg max-h-[15em] w-full z-[1] bg-white {dropdownCssClass, dropdownStyle}" bind:this={mediaList}>
             <slot></slot>
         </ul>
     </div>
