@@ -1,7 +1,9 @@
 {
-	"name": "searchselectsvelte",
-	"version": "0.0.1",
+	"name": "@canadies/searchselectsvelte",
+	"version": "1.0.0",
 	"author": "Daniel Ho (https://github.com/Hai567)",
+	"description": "An easy to use select Svelte component with lots of handy integrated features",
+	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -48,5 +50,13 @@
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"type": "module"
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Hai567/SearchSelectSvelte"
+	},
+	"bugs": {
+		"url": "https://github.com/Hai567/SearchSelectSvelte/issues"
+	},
+	"homepage": "https://github.com/Hai567/SearchSelectSvelte#readme"
 }
