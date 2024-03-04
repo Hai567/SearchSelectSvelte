@@ -66,6 +66,7 @@ npm i @canadies/searchselectsvelte
 | `dropdownCssClass`      | `string` | **Optional**. Style the select dropdown using css class (global css, tailwind, etc) as you wish |
 | `dropdownStyle`      | `string` | **Optional**. Style the select dropdown using css style as you wish |
 
+---
 #### li (select option)
 select options must contain the class "select-option"
 
@@ -82,3 +83,5 @@ For further support, feel free to email danielho567@gmail.com.
 ## Issues
 If you find any bugs, be my guest to create new issues ♥️♥️
 
+## Appendix
+If you find this useful, please leave a star on my [github repo](https://svelte.dev/repl/96062f3357ea4f61b6dfffe8fb90b20a?version=4.2.12), it would help me a lot ♥️♥️♥️

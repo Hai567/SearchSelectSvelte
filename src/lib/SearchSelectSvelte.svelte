@@ -1,7 +1,7 @@
 <script>
     export let selected, inputPlaceholder, dropdownCssClass, dropdownStyle
     import { onMount } from "svelte";
-    let isDropdownOpen = false
+    $: isDropdownOpen = false
 
     let mediaList, query
     function filterQuery() {
@@ -71,9 +71,6 @@
         .relative {
             position: relative;
         }
-        .hidden {
-            display: none;
-        }
         .block {
             display: block;
         }
@@ -98,6 +95,9 @@
             border-radius: 8px;
             padding: 0.5rem;
         }
+        .hidden {
+            display: none !important;
+        }
     </style>
 </svelte:head>
 
@@ -105,7 +105,7 @@
     <input type="text" tabindex="0" class="w-full input-bordered" placeholder={inputPlaceholder || "Search here"} bind:value={query} on:keyup={filterQuery} on:click={toggleDropdown}>
     <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
     <div class="w-full relative">
-        <ul id="" tabindex="0" style={dropdownStyle ||''} class:hidden={!isDropdownOpen} class="block absolute p-2 rounded-lg max-h-[15em] w-full z-[1] bg-white {dropdownCssClass, dropdownStyle}" bind:this={mediaList}>
+        <ul id="dropdown-board" tabindex="0" style={dropdownStyle} class:hidden={!isDropdownOpen} class="block absolute p-2 rounded-lg max-h-[15em] w-full z-[1] bg-white {dropdownCssClass}" bind:this={mediaList}>
             <slot></slot>
         </ul>
     </div>

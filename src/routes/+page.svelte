@@ -4,7 +4,7 @@
     let selectedValue
 </script>
 
-<div class=" max-w-md mx-auto flex flex-wrap gap-10">
+<div class="max-w-md mx-auto flex flex-wrap gap-10">
     <h1 class="font-bold text-3xl w-full">Search Select Svelte Demo</h1>
     <SearchSelectSvelte bind:selected={selectedValue}>
         {#each list as item}

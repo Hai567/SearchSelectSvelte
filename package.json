@@ -17,8 +17,7 @@
 		"search",
 		"searchselect",
 		"custom",
-		"component",
-		"easy"
+		"component"
 	],
 	"exports": {
 		"./SearchSelectSvelte.svelte": {
@@ -34,9 +33,6 @@
 	"peerDependencies": {
 		"svelte": "^4.0.0"
 	},
-	"dependencies": {
-		"tailwindcss": "^3.4.1"
-	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
@@ -46,7 +42,6 @@
 		"postcss": "^8.4.35",
 		"publint": "^0.1.9",
 		"svelte": "^4.2.7",
-		"tailwindcss": "^3.4.1",
 		"tslib": "^2.4.1",
 		"typescript": "^5.3.2",
 		"vite": "^5.0.11"
