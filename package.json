@@ -1,6 +1,6 @@
 {
 	"name": "@canadies/searchselectsvelte",
-	"version": "1.10.0",
+	"version": "1.10.1",
 	"author": "Daniel Ho (https://github.com/Hai567)",
 	"description": "A light weight, easy to use select Svelte component with lots of handy integrated features",
 	"license": "MIT",

@@ -58,13 +58,20 @@ npm i @canadies/searchselectsvelte
 
 ## Properties
 
-
+#### ul (dropdown board)
 | Properties | Type     | Description                       | 
 | :-------- | :------- | :-------------------------------- |
 | `selected`      | `string` | **Required**. Used to bind the selected value |
 | `inputPlaceholder`      | `string` | **Optional**. Placeholder of the select (default: 'Search here') |
 | `dropdownCssClass`      | `string` | **Optional**. Style the select dropdown using css class (global css, tailwind, etc) as you wish |
 | `dropdownStyle`      | `string` | **Optional**. Style the select dropdown using css style as you wish |
+
+#### li (select option)
+select options must contain the class "select-option"
+
+| Properties | Type     | Description                       | 
+| :-------- | :------- | :-------------------------------- |
+| `data-value`      | `string` | **Required**. Value of the select option |
 
 
 
